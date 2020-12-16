@@ -55,7 +55,7 @@ namespace PlacesIveBeen.Tests
     [TestMethod]
     public void GetAll_ReturnsEmptyList_PlaceList()
     {
-      List<string> testPlaceList = new List<string> { "place" };
+      List<Place> testPlaceList = new List<Place> { };
       List<Place> result = Place.GetAll();
       CollectionAssert.AreEqual(testPlaceList, result);
     }
