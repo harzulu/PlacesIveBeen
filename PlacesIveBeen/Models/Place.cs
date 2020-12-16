@@ -5,10 +5,12 @@ namespace PlacesIveBeen.Models
   public class Place
   {
     public string CityName { get; set; }
+    public int Durration { get; set; }
 
-    public Place(string cityName)
+    public Place(string cityName, int durration)
     {
       CityName = cityName;
+      Durration = durration;
       //_instances.Add(this);
     }
     /*

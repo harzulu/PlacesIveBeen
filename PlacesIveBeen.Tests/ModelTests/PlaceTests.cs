@@ -9,15 +9,22 @@ namespace PlacesIveBeen.Tests
     [TestMethod]
     public void MakePlace_CreateAnInstanceOfPlace_Place()
     {
-      Place testPlace = new Place("test");
+      Place testPlace = new Place("test", 0);
       Assert.AreEqual(typeof(Place), testPlace.GetType());
     }
 
     [TestMethod]
     public void CityName_GetGivenCityName_String()
     {
-      Place testPlace = new Place("Portland");
+      Place testPlace = new Place("Portland", 0);
       Assert.AreEqual("Portland", testPlace.CityName);
+    }
+
+    [TestMethod]
+    public void Durration_GetGivenDurration_Int()
+    {
+      Place testPlace = new Place("test", 7);
+      Assert.AreEqual(8, testPlace.Durration);
     }
   }
 }
