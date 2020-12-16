@@ -4,7 +4,8 @@ namespace PlacesIveBeen.Models
 {
   public class Place
   {
-    public string Description { get; set; }
+    /*
+    public string CityName { get; set; }
     private static List<Place> _instances = new List<Place> {};
 
     public Place(string description)
@@ -22,6 +23,6 @@ namespace PlacesIveBeen.Models
     {
       _instances.Clear();
     }
-
+*/
   }
 }
