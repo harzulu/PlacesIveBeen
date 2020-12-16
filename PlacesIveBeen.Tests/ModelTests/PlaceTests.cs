@@ -59,6 +59,16 @@ namespace PlacesIveBeen.Tests
       List<Place> result = Place.GetAll();
       CollectionAssert.AreEqual(testPlaceList, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnPlaceObjects_PlaceList()
+    {
+      Place place01 = new Place("test", 0, testList, "test");
+      Place place02 = new Place("test", 0, testList, "test");
+      List<Place> testPlaceList = new List<Place> { place01 };
+      List<Place> result = Place.GetAll();
+      CollectionAssert.AreEqual(testPlaceList, result);
+    }
   }
 }
 
