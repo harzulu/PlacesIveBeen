@@ -65,7 +65,7 @@ namespace PlacesIveBeen.Tests
     {
       Place place01 = new Place("test", 0, testList, "test");
       Place place02 = new Place("test", 0, testList, "test");
-      List<Place> testPlaceList = new List<Place> { place01 };
+      List<Place> testPlaceList = new List<Place> { place01, place02 };
       List<Place> result = Place.GetAll();
       CollectionAssert.AreEqual(testPlaceList, result);
     }

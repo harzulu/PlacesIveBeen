@@ -58,6 +58,8 @@ This application will allow a user to create an online travel diary.
 | **Return given durration (in days)** | `8` | `8` |
 | **Return names of who you travelled with** | `{"person one", "person two", "person three"}` | `{"person one", "person two", "person three"} `|
 | **Return given description of trip** | "We went to downtown and to the river" | "We went to downtown and to the river" |
+| **Return empty static List**  |  | *Empty List* |
+| **Return Place objects in static List** | *Make two instances of Place* | *List of those Place instances* |
 
 
 ### Tests
@@ -81,6 +83,14 @@ Expect: Assert.AreEqual({"person one","person two", "person three"}, Place({"per
 Describe: Place(string description)
 Test: Return given descriptoin of trip
 Expect: Assert.AreEqual("We went to downtown and to the river", Place("We went to downtown and to the river"))
+
+Describe: GetAll()
+Test: Return empty static List
+Expect: CollectionAssert.AreEqual(*Empty list*, Place.GetAll());
+
+Describe: GetAll()
+Test: Return instances of Place objects in static List
+Expect: CollectionAssert.AreEqual({Place, Place}, Place.GetAll());
 
 ## Bugs / Issues
 
