@@ -5,12 +5,10 @@ namespace PlacesIveBeen.Controllers
 {
   public class HomeController : Controller
   {
-/*
-    [Route("/")]
-    public ActionResult Index()
+    [HttpGet("/")]
+    public ActionResult index()
     {
-      
+      return View();
     }
-*/
   }
 }
