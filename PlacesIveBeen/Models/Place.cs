@@ -8,18 +8,17 @@ namespace PlacesIveBeen.Models
     public int Durration { get; set; }
     public List<string> PeopleList { get; set; }
     public string Description { get; set; }
- 
+    private static List<Place> _instances = new List<Place> {};
+
     public Place(string cityName, int durration, List<string> peopleList, string description)
     {
       CityName = cityName;
       Durration = durration;
       PeopleList = peopleList;
       Description = description;
+      _instances.Add(this);
     }
-    /*
-    private static List<Place> _instances = new List<Place> {};
-
-
+    
     public static List<Place> GetAll()
     {
       return _instances;
@@ -29,6 +28,6 @@ namespace PlacesIveBeen.Models
     {
       _instances.Clear();
     }
-*/
+
   }
 }

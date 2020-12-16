@@ -6,8 +6,14 @@ using System.Collections.Generic;
 namespace PlacesIveBeen.Tests
 {
   [TestClass]
-  public class PlaceTests
+  public class PlaceTests : IDisposable
   {
+
+    public void Dispose()
+    {
+      Place.ClearAll();
+    }
+
     List<string> testList = new List<string> {"test"};
 
     [TestMethod]
@@ -45,6 +51,14 @@ namespace PlacesIveBeen.Tests
       Place testPlace = new Place("test", 0, testList, "We went to downtown and to the river");
       Assert.AreEqual("We went to downtown and to the river", testPlace.Description);
     } 
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_PlaceList()
+    {
+      List<string> testPlaceList = new List<string> { "place" };
+      List<Place> result = Place.GetAll();
+      CollectionAssert.AreEqual(testPlaceList, result);
+    }
   }
 }
 
