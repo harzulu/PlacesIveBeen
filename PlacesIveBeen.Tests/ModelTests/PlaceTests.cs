@@ -16,7 +16,7 @@ namespace PlacesIveBeen.Tests
     [TestMethod]
     public void CityName_GetGivenCityName_String()
     {
-      Place testPlace = new Place("Porkland");
+      Place testPlace = new Place("Portland");
       Assert.AreEqual("Portland", testPlace.CityName);
     }
   }
