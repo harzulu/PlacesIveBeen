@@ -7,10 +7,17 @@ namespace PlacesIveBeen.Tests
   public class PlaceTests
   {
     [TestMethod]
-    public void TestName_Description_Output()
+    public void MakePlace_CreateAnInstanceOfPlace_Place()
     {
-      Place testPlace = new Place();
+      Place testPlace = new Place("test");
       Assert.AreEqual(typeof(Place), testPlace.GetType());
+    }
+
+    [TestMethod]
+    public void CityName_GetGivenCityName_String()
+    {
+      Place testPlace = new Place("Porkland");
+      Assert.AreEqual("Portland", testPlace.CityName);
     }
   }
 }
