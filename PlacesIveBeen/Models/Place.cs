@@ -7,13 +7,14 @@ namespace PlacesIveBeen.Models
     public string CityName { get; set; }
     public int Durration { get; set; }
     public List<string> PeopleList { get; set; }
+    public string Description { get; set; }
  
-    public Place(string cityName, int durration, List<string> peopleList)
+    public Place(string cityName, int durration, List<string> peopleList, string description)
     {
       CityName = cityName;
       Durration = durration;
       PeopleList = peopleList;
-      //_instances.Add(this);
+      Description = description;
     }
     /*
     private static List<Place> _instances = new List<Place> {};
