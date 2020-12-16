@@ -6,7 +6,7 @@ namespace PlacesIveBeen.Controllers
   public class HomeController : Controller
   {
     [HttpGet("/")]
-    public ActionResult index()
+    public ActionResult Index()
     {
       return View();
     }
