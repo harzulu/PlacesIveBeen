@@ -36,7 +36,7 @@ namespace PlacesIveBeen.Tests
     {
       List<string> testPeopleList = new List<string> {"person one", "person two", "person three"};
       Place testPlace = new Place("test", 0, testPeopleList);
-      CollectionAssert.AreEqual(testList, testPlace.PeopleList);
+      CollectionAssert.AreEqual(testPeopleList, testPlace.PeopleList);
     }
   }
 }
