@@ -9,8 +9,7 @@ namespace PlacesIveBeen.Tests
     [TestMethod]
     public void TestName_Description_Output()
     {
-      //Place testPlace = new Place();
-      int testPlace = 1;
+      Place testPlace = new Place();
       Assert.AreEqual(typeof(Place), testPlace.GetType());
     }
   }
