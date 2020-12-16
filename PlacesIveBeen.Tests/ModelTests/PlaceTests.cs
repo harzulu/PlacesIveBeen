@@ -42,7 +42,7 @@ namespace PlacesIveBeen.Tests
     [TestMethod]
     public void Description_GetGivenDescription_String()
     {
-      Place testPlace = new Place("test", 0, testList, "We went to downtown and to the iver");
+      Place testPlace = new Place("test", 0, testList, "We went to downtown and to the river");
       Assert.AreEqual("We went to downtown and to the river", testPlace.Description);
     } 
   }
