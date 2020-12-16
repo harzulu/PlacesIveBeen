@@ -23,7 +23,7 @@ namespace PlacesIveBeen.Tests
     [TestMethod]
     public void Durration_GetGivenDurration_Int()
     {
-      Place testPlace = new Place("test", 7);
+      Place testPlace = new Place("test", 8);
       Assert.AreEqual(8, testPlace.Durration);
     }
   }
